@@ -29,4 +29,15 @@ public class Box : Interactible
         base.Stop();
         Rigidbody2D.velocity = Vector2.zero;
     }
+
+    protected override void OnEnter()
+    {
+        base.OnEnter();
+        // Actor.SetSpeedMultiplier(0.5f); // NOTE: slowing the player does not make sense since there is nothing to exploit the vulnerableness
+    }
+    protected override void OnExit()
+    {
+        base.OnEnter();
+        // Actor.ResetSpeedMultiplier();
+    }
 }
