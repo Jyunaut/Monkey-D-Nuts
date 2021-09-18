@@ -6,7 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Box : Interactible
 {
+    public Vector2 offset;
     private Rigidbody2D Rigidbody2D;
+    private Vector2 actorPosition;
 
     protected override void Awake()
     {
@@ -17,7 +19,9 @@ public class Box : Interactible
 
     public override void DoBehaviour()
     {
-        Rigidbody2D.MovePosition(Actor.GetComponent<Rigidbody2D>().position);
+        Vector2 actor = Actor.GetComponent<Rigidbody2D>().position;
+        Vector2 curPosition = new Vector2(offset.x + actor.x, offset.y + actor.y);
+        Rigidbody2D.MovePosition(curPosition);
     }
 
     public override void Stop()

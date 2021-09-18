@@ -57,10 +57,9 @@ namespace Player
 
         public void SetInteractible(Interactible obj)
         {
-            Object?.OnExit();
+            Object?.Stop();
             Object = obj;
-            Object.Interact(this.gameObject);
-            Object.OnEnter();
+            Object.Interact(this);
         }
     }
 }
