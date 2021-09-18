@@ -32,7 +32,7 @@ namespace Player
         {
             if (Inputs.IsPressingMovement)
                 Controller.SetState(new Move());
-            if(Inputs.InteractAHold)
+            if(Inputs.InteractAPress)
                 Controller.SetState(new Interact());
         }
     }
