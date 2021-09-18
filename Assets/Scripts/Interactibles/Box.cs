@@ -8,15 +8,16 @@ public class Box : Interactible
 {
     private Rigidbody2D Rigidbody2D;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Rigidbody2D.isKinematic = true;
     }
 
     public override void DoBehaviour()
     {
-        Rigidbody2D.velocity = Actor.GetComponent<Rigidbody2D>().velocity;    
+        Rigidbody2D.MovePosition(Actor.GetComponent<Rigidbody2D>().position);
     }
 
     public override void Stop()

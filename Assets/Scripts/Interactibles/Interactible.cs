@@ -8,10 +8,11 @@ public abstract class Interactible : MonoBehaviour
     public GameObject Actor;
     public Action Action;
 
-    private void Update()
+    protected virtual void Awake() { Action = null; }
+
+    protected virtual void Update()
     {
-        if(Action != null)
-            Action();
+        if(Action != null) Action();
     }
 
     public virtual void Interact(GameObject actor)
@@ -19,6 +20,10 @@ public abstract class Interactible : MonoBehaviour
         Actor = actor;
         Action = DoBehaviour;
     }
+
+    public virtual void OnEnter() { }
+
+    public virtual void OnExit() { Stop(); }
 
     public virtual void DoBehaviour() { }
 
