@@ -23,7 +23,7 @@ public class TeleporttoStart : MonoBehaviour {
 		    var rendererBounds = portalOne.GetComponent<Renderer>();
 		    float width = rendererBounds.bounds.size.x;
 		    Vector3 playerPos;
-		    playerPos = new Vector3(player.transform.position.x+width/2, player.transform.position.y, player.transform.position.z);
+		    playerPos = new Vector3(portalOne.transform.position.x+width/2, player.transform.position.y, player.transform.position.z);
 		    player.transform.position = playerPos;
 
 	    }
