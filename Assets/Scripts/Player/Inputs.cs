@@ -12,7 +12,7 @@ namespace Player
         {
             get
             {
-                if (!Controller.ControlsEnabled)
+                if (!Controller.ControlsEnabled || !Controller.CanInteract)
                     return false;
 
                 return Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J);
@@ -22,7 +22,7 @@ namespace Player
         {
             get
             {
-                if (!Controller.ControlsEnabled)
+                if (!Controller.ControlsEnabled || !Controller.CanInteract)
                     return false;
                 
                 return Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.K);
@@ -32,7 +32,7 @@ namespace Player
         {
             get
             {
-                if (!Controller.ControlsEnabled)
+                if (!Controller.ControlsEnabled || !Controller.CanInteract)
                     return false;
                 
                 return Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.J);
@@ -42,7 +42,7 @@ namespace Player
         {
             get
             {
-                if (!Controller.ControlsEnabled)
+                if (!Controller.ControlsEnabled || !Controller.CanInteract)
                     return false;
                 
                 return Input.GetKey(KeyCode.X) || Input.GetKey(KeyCode.K);
