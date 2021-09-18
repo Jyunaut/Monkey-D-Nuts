@@ -22,27 +22,17 @@ namespace Player
 
     class Idle : State
     {
-        public override void OnEnter()
-        {
-            base.OnEnter();
-            Debug.Log("Idle");
-        }
-
         public override void OnTransition()
         {
             if (Inputs.IsPressingMovement)
                 Controller.SetState(new Move());
+            if(Inputs.InteractAPress)
+                Controller.SetState(new Interact());
         }
     }
 
     class Move : State
     {
-        public override void OnEnter()
-        {
-            base.OnEnter();
-            Debug.Log("Move");
-        }
-
         public override void OnFixedUpdate()
         {
             if (Inputs.IsPressingMovement)
@@ -61,44 +51,44 @@ namespace Player
 
     class Interact : State
     {
-        private Action DoWait;
+        private Action _doOnExit; // NOTE: Place holder until pick-up animation is implemented
         public override void OnEnter()
         {
             base.OnEnter();
-            DoWait = () =>
+            
+            float radius = 1f;
+            Collider2D[] hit = Physics2D.OverlapCircleAll(Controller.transform.position, radius);
+            foreach (Collider2D obj in hit)
             {
-                Controller.StartCoroutine(wait()); DoWait = null;
+                if (obj.transform.tag == "Respawn")
+                {
+                    Interactible interactible = obj.transform.GetComponent<Interactible>();
+                    if (interactible.CanInteract)
+                    {
+                        interactible.Interact(Controller);
+                        break;
+                    }
+                }
+            }
+            _doOnExit = () =>
+            {
+                float waitTime = 0.15f;
+                _doOnExit = null;
+                Controller.StartCoroutine(wait());
                 IEnumerator wait()
                 {
-                    yield return new WaitForSeconds(0.15f);
+                    yield return new WaitForSeconds(waitTime);
                     Controller.SetState(new Idle());
                 }
             };
 
-            if(Controller.Object != null)
-            {
-                Controller.Object.Stop();
-                Controller.Object = null;
-                return;
-            }
-
-            float radius = 1f;
-            Collider2D[] hit = Physics2D.OverlapCircleAll(Controller.transform.position, radius);
-            foreach(Collider2D obj in hit)
-            {
-                if(obj.transform.tag == "Respawn")
-                {
-                    Controller.SetInteractible(obj.transform.GetComponent<Interactible>());
-                    break;
-                }
-            }
         }
 
         public override void OnTransition()
         {
             base.OnTransition();
-            if (DoWait != null)
-                DoWait();
+            if (_doOnExit != null)
+                _doOnExit();
         }
     }
 }
