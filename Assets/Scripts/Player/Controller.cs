@@ -26,6 +26,7 @@ namespace Player
         public static bool CanMove { get; private set; } = true;
         public Vector2 Direction { get; set; }
         public Vector2 Velocity { get; set; }
+        [field: SerializeField] public Interactible Object { get; set; }
 
         private void Awake()
         {
@@ -52,6 +53,13 @@ namespace Player
             State?.OnExit();
             State = state;
             State.OnEnter();
+        }
+
+        public void SetInteractible(Interactible obj)
+        {
+            Object?.Stop();
+            Object = obj;
+            Object.Interact(this);
         }
     }
 }

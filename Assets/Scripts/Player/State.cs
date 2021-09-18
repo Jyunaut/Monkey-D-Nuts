@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace Player
 {
@@ -31,6 +32,8 @@ namespace Player
         {
             if (Inputs.IsPressingMovement)
                 Controller.SetState(new Move());
+            if(Inputs.InteractAHold)
+                Controller.SetState(new Interact());
         }
     }
 
@@ -55,15 +58,52 @@ namespace Player
         {
             if (!Inputs.IsPressingMovement)
                 Controller.SetState(new Idle());
+
+            if(Inputs.InteractAPress)
+                Controller.SetState(new Interact());
         }
     }
 
     class Interact : State
     {
+        private Action DoWait;
         public override void OnEnter()
         {
             base.OnEnter();
-            Debug.Log("Interact");
+            DoWait = () =>
+            {
+                Controller.StartCoroutine(wait()); DoWait = null;
+                IEnumerator wait()
+                {
+                    yield return new WaitForSeconds(0.15f);
+                    Controller.SetState(new Idle());
+                }
+            };
+
+            if(Controller.Object != null)
+            {
+                Controller.Object.Stop();
+                Controller.Object = null;
+                return;
+            }
+
+            float radius = 1f;
+            Collider2D[] hit = Physics2D.OverlapCircleAll(Controller.transform.position, radius);
+            foreach(Collider2D obj in hit)
+            {
+                if(obj.transform.tag == "Respawn")
+                {
+                    Controller.SetInteractible(obj.transform.GetComponent<Interactible>());
+                    break;
+                }
+            }
+        }
+
+        public override void OnTransition()
+        {
+            base.OnTransition();
+            if (DoWait != null)
+                DoWait();
         }
     }
 }
