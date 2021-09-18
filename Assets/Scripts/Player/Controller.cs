@@ -10,7 +10,9 @@ namespace Player
     [RequireComponent(typeof(BoxCollider2D))]
     public class Controller : MonoBehaviour
     {
-        [SerializeField, Range(0,5)] private float _speed = 1f;
+        [SerializeField, Range(0f,20f)] private float _speed = 1f;
+        [field: SerializeField] public Interactible Object { get; set; }
+        
         private float _speedMultiplier = 1f;
         public float Speed => _speed * _speedMultiplier;
         public void SetSpeedMultiplier(float multiplier) => _speedMultiplier = Mathf.Clamp(multiplier, 0.1f, 4f);
@@ -22,11 +24,12 @@ namespace Player
 
         public State State { get; set; }
 
-        public static bool ControlsEnabled { get; private set; } = true;
-        public static bool CanMove { get; private set; } = true;
+        public static bool ControlsEnabled { get; set; } = true;
+        public static bool CanMove { get; set; } = true;
+        public static bool CanInteract { get; set; } = true;
+
         public Vector2 Direction { get; set; }
         public Vector2 Velocity { get; set; }
-        [field: SerializeField] public Interactible Object { get; set; }
 
         private void Awake()
         {

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class ButtonReceiver : MonoBehaviour
 {
-    public virtual void Trigger() { }
+    public abstract void Trigger();
 }

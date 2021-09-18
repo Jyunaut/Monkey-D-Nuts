@@ -20,7 +20,7 @@ public class TeleporttoStart : MonoBehaviour {
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
 	    var portalRendererBounds = portalOther.GetComponent<Renderer>();
 	    float portalWidth = portalRendererBounds.bounds.size.x;
 	    float portalHeight = portalRendererBounds.bounds.size.y;
