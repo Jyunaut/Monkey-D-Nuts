@@ -32,8 +32,6 @@ namespace Player
         {
             if (Inputs.IsPressingMovement)
                 Controller.SetState(new Move());
-            if(Inputs.InteractAPress)
-                Controller.SetState(new Interact());
         }
     }
 
@@ -50,17 +48,14 @@ namespace Player
             if (Inputs.IsPressingMovement)
                 Controller.Direction = new Vector2(Inputs.Horizontal, Inputs.Vertical).normalized;
             
-            Controller.Velocity = (Controller.Speed * Controller.Direction) * Time.deltaTime;
-            Controller.Rigidbody2d.MovePosition(Controller.Rigidbody2d.position + Controller.Velocity);
+            Controller.Velocity = Controller.Speed * Controller.Direction;
+            Controller.Rigidbody2d.MovePosition(Controller.Rigidbody2d.position + (Controller.Velocity * Time.deltaTime));
         }
 
         public override void OnTransition()
         {
             if (!Inputs.IsPressingMovement)
                 Controller.SetState(new Idle());
-
-            if(Inputs.InteractAPress)
-                Controller.SetState(new Interact());
         }
     }
 
