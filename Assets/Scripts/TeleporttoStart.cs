@@ -33,15 +33,15 @@ public class TeleporttoStart : MonoBehaviour {
 			    lastPlayerX = player.transform.position.x;
 			    
 			    // If player hits top boundary
-			    if (player.transform.position.y + playerHeight / 2 <=
-				    portalOther.transform.position.y - portalHeight / 2) {
+			    if (player.transform.position.y <=
+				    portalOther.transform.position.y) {
 				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y + portalHeight/2 + playerHeight/2, player.transform.position.z);
 				    player.transform.position = playerPos;
 			    }
 			    
 			    // If player hits bottom boundary
-			    else if (player.transform.position.y - playerHeight / 2 >=
-				    portalOther.transform.position.y + portalHeight / 2) {
+			    else if (player.transform.position.y>=
+				    portalOther.transform.position.y) {
 				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y - portalHeight/2 - playerHeight/2, player.transform.position.z);
 				    player.transform.position = playerPos;
 			    }
@@ -51,15 +51,15 @@ public class TeleporttoStart : MonoBehaviour {
 		    else if (horizontalOrVertical == "vertical") {
 			    lastPlayerY = player.transform.position.y;
 
-			    if (player.transform.position.x + playerWidth / 2 <=
-				    portalOther.transform.position.x - portalWidth / 2) {
-				    playerPos = new Vector3(portalOther.transform.position.x + portalWidth/2 + playerWidth/2, lastPlayerY, player.transform.position.z);
+			    if (player.transform.position.x <=
+				    portalOther.transform.position.x) {
+				    playerPos = new Vector3(portalOther.transform.position.x - portalWidth/2 - playerWidth/2, lastPlayerY, player.transform.position.z);
 				    player.transform.position = playerPos;
 				    
 			    }
-			    else if (player.transform.position.x - playerWidth / 2 <=
-				    portalOther.transform.position.x + portalWidth / 2) {
-				    playerPos = new Vector3(portalOther.transform.position.x - portalWidth/2 - playerWidth/2, lastPlayerY, player.transform.position.z);
+			    else if (player.transform.position.x >=
+				    portalOther.transform.position.x) {
+				    playerPos = new Vector3(portalOther.transform.position.x + portalWidth/2 + playerWidth/2, lastPlayerY, player.transform.position.z);
 				    player.transform.position = playerPos;
 				    
 			    }
