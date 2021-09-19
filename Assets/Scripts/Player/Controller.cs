@@ -11,7 +11,7 @@ namespace Player
     public class Controller : MonoBehaviour
     {
         [SerializeField, Range(0f,20f)] private float _speed = 1f;
-        [field: SerializeField] public Interactible Object { get; set; }
+        [field: SerializeField] public Interactible HeldItem { get; set; }
         
         private float _speedMultiplier = 1f;
         public float Speed => _speed * _speedMultiplier;

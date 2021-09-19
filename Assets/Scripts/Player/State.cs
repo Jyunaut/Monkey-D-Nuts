@@ -20,9 +20,13 @@ namespace Player
         public override void OnEnter()
         {
             base.OnEnter();
-            // Controller.Animator.Play("Idle");
+            if(Controller.HeldItem != null)
+            {
+                Controller.Animator.Play("IdlePickup");
+                return;
+            }
+            Controller.Animator.Play("Idle");
         }
-
         public override void OnTransition()
         {
             if (Inputs.IsPressingMovement)
@@ -35,6 +39,17 @@ namespace Player
 
     class Move : State
     {
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            if(Controller.HeldItem != null)
+            {
+                Controller.Animator.Play("MovePickup");
+                return;
+            }
+            Controller.Animator.Play("Move");
+        }
+
         public override void OnFixedUpdate()
         {
             if (Inputs.IsPressingMovement)
@@ -79,10 +94,19 @@ namespace Player
                     {
                         if(interactible.gameObject.CompareTag("Box"))
                         {
-                            if(interactible.IsActive)
+                            if(Controller.HeldItem != null)
+                            {
                                 Controller.StartCoroutine(DoInteract(new Drop(interactible)));
+                                return;
+                            }
                             else
-                                Controller.StartCoroutine(DoInteract(new PickUp(interactible)));
+                            {
+                                if(interactible.CanInteract)
+                                {
+                                    Controller.StartCoroutine(DoInteract(new PickUp(interactible)));
+                                    return;
+                                }
+                            }
                         }
                         else if(interactible.gameObject.CompareTag("Switch"))
                             Controller.StartCoroutine(DoInteract(new Kick(interactible)));
@@ -101,6 +125,7 @@ namespace Player
         public Kick(Interactible interactible = null)
         {
             _interactible = interactible;
+            Controller.HeldItem = _interactible;
         }
 
         public override void OnEnter()
@@ -126,6 +151,7 @@ namespace Player
         public PickUp(Interactible interactible = null)
         {
             _interactible = interactible;
+            Controller.HeldItem = _interactible;
         }
 
         public override void OnEnter()
@@ -151,6 +177,7 @@ namespace Player
         public Drop(Interactible interactible = null)
         {
             _interactible = interactible;
+            Controller.HeldItem = null;
         }
 
         public override void OnEnter()
@@ -162,8 +189,10 @@ namespace Player
             {
                 Controller.Animator.Play("Drop");
                 yield return new WaitForSeconds(0.5f);
-                Controller.Animator.Play("Idle");
-                Controller.SetState(new Idle());
+                if (!Inputs.IsPressingMovement)
+                    Controller.SetState(new Idle());
+                if (Inputs.IsPressingMovement)
+                    Controller.SetState(new Move());
             }
         }
     }
