@@ -843,7 +843,7 @@ Tilemap:
   - m_RefCount: 68
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 1
-    m_Data: {r: 0.9566414, g: 0.4725093, b: 0.51465946, a: 1}
+    m_Data: {r: 0.94684434, g: 0.42781812, b: 0.4751926, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -929,15 +929,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3976141334561953576, guid: 1ce6749875711e24dbbc8a358ea64625, type: 3}
       propertyPath: m_LocalScale.x
-      value: 13.563001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3976141334561953576, guid: 1ce6749875711e24dbbc8a358ea64625, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.1124
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3976141334561953576, guid: 1ce6749875711e24dbbc8a358ea64625, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.67
+      value: 2.61
       objectReference: {fileID: 0}
     - target: {fileID: 3976141334561953576, guid: 1ce6749875711e24dbbc8a358ea64625, type: 3}
       propertyPath: m_LocalPosition.y
