@@ -43,8 +43,7 @@ public class ButtonObject : Interactible
                 _tripTarget.transform.position = this.transform.position;
                 for (int i = 0; i < TriggerTarget.Length; i++)
                 {
-                    Debug.Log("ENABLE");
-                    _triggerTarget[i].DoBehaviour();
+                    IsActive = true;
                     _doDisableTriggerTarget = TriggerTargetCallback;
                 }
             }
@@ -55,17 +54,8 @@ public class ButtonObject : Interactible
     {
         if(_tripTarget.IsActive)
         {
-            Debug.Log("DISABLE");
-            StartCoroutine(DisableTargets());
+            IsActive = false;
             _doDisableTriggerTarget = null;
-        }
-
-        IEnumerator DisableTargets()
-        {
-            for (int i = 0; i < TriggerTarget.Length; i++)
-                _triggerTarget[i].Stop();
-            _tripTarget = null;
-            yield return null;
         }
     }
 }
