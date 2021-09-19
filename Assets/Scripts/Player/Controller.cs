@@ -55,14 +55,7 @@ namespace Player
         {
             State?.OnExit();
             State = state;
-            State.OnEnter();
-        }
-
-        public void SetInteractible(Interactible obj)
-        {
-            Object?.Stop();
-            Object = obj;
-            Object.Interact(this);
+            State?.OnEnter();
         }
     }
 }

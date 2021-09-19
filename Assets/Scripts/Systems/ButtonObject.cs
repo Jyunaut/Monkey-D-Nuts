@@ -2,16 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonObject : MonoBehaviour
+public class ButtonObject : Interactible
 {
     public GameObject TripTarget;
-    public ButtonReceiver TriggerTarget;
+    public GameObject TriggerTarget;
 
-    public void OnTriggerEnter2D(Collider2D col)
+    private Interactible _tripTarget;
+    private Interactible _triggerTarget;
+
+    protected override void Awake()
     {
-        if(col.gameObject == TripTarget.gameObject)
+        base.Awake();
+        _tripTarget = TripTarget.GetComponent<Interactible>();
+        _triggerTarget = TriggerTarget.GetComponent<Interactible>();
+    }
+
+    public void OnTriggerStay2D(Collider2D col)
+    {
+        Debug.Log(col.gameObject.name);
+        if(col.gameObject.CompareTag("Box"))
         {
-            TriggerTarget.Trigger();
+            if(!_tripTarget.IsActive)
+            {
+                TripTarget.transform.position = this.transform.position;
+                _triggerTarget.DoBehaviour();
+            }
         }
     }
 }
