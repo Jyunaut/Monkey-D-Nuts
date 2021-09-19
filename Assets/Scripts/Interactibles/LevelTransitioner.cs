@@ -7,11 +7,21 @@ public class LevelTransitioner : Interactible
 {
     private Action _doTransitionLevel;
 
+    public GameObject Switch;
+
     protected override void Awake()
     {
         base.Awake();
-        DontDestroyOnLoad(gameObject);
         _doTransitionLevel = TransitionLevel;
+    }
+
+    protected override void Update()
+    {
+        if(_doTransitionLevel != null && Switch && Switch.GetComponent<Interactible>().IsActive)
+        {
+            Destroy(Switch);
+            _doTransitionLevel();
+        }
     }
 
     private void OnEnable()
@@ -22,14 +32,6 @@ public class LevelTransitioner : Interactible
     private void OnDisable()
     {
         GameEvent.OnLevelComplete -= RefreshLmao;
-    }
-
-    public override void DoBehaviour()
-    {
-        base.DoBehaviour();
-        Debug.Log(_doTransitionLevel);
-        if(_doTransitionLevel != null)
-            _doTransitionLevel();
     }
 
     private void TransitionLevel()

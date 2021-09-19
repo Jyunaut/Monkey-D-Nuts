@@ -52821,6 +52821,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580702294791638
 GameObject:
   m_ObjectHideFlags: 0
@@ -52848,6 +52849,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 3970642137441894966}
   - {fileID: 9093580702829788638}
   - {fileID: 9093580702676216539}
   - {fileID: 9093580703154434642}
@@ -52987,6 +52989,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580702554317587
 GameObject:
   m_ObjectHideFlags: 0
@@ -53146,6 +53149,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580702676216538
 GameObject:
   m_ObjectHideFlags: 0
@@ -53181,7 +53185,7 @@ Transform:
   - {fileID: 9093580702554317584}
   - {fileID: 6670588643551366348}
   m_Father: {fileID: 9093580702294791639}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &9093580702676216536
 Grid:
@@ -53469,6 +53473,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580702789847827
 GameObject:
   m_ObjectHideFlags: 0
@@ -53596,6 +53601,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580702802423174
 GameObject:
   m_ObjectHideFlags: 0
@@ -53754,6 +53760,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580702829788633
 GameObject:
   m_ObjectHideFlags: 0
@@ -53790,7 +53797,7 @@ Transform:
   - {fileID: 7448274983568436722}
   - {fileID: 4054551040480816130}
   m_Father: {fileID: 9093580702294791639}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &9093580702829788639
 Grid:
@@ -54076,6 +54083,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &9093580702940769160
 GameObject:
   m_ObjectHideFlags: 0
@@ -54234,6 +54242,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703072353196
 GameObject:
   m_ObjectHideFlags: 0
@@ -54359,6 +54368,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &9093580703104850720
 GameObject:
   m_ObjectHideFlags: 0
@@ -54489,7 +54499,7 @@ Transform:
   - {fileID: 9093580703737789221}
   - {fileID: 5011081648122108376}
   m_Father: {fileID: 9093580702294791639}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &9093580703154434643
 Grid:
@@ -54685,7 +54695,7 @@ Transform:
   - {fileID: 9093580703414596057}
   - {fileID: 2860682580542916649}
   m_Father: {fileID: 9093580702294791639}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &9093580703179282746
 Grid:
@@ -54881,7 +54891,7 @@ Transform:
   - {fileID: 9093580703846907307}
   - {fileID: 1781221739747717861}
   m_Father: {fileID: 9093580702294791639}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &9093580703216538511
 Grid:
@@ -55167,6 +55177,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &9093580703259399772
 GameObject:
   m_ObjectHideFlags: 0
@@ -57246,6 +57257,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703368307586
 GameObject:
   m_ObjectHideFlags: 0
@@ -57371,6 +57383,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &9093580703373132537
 GameObject:
   m_ObjectHideFlags: 0
@@ -57496,6 +57509,8 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches:
+  - {fileID: 9093580703981178565}
 --- !u!1 &9093580703414596056
 GameObject:
   m_ObjectHideFlags: 0
@@ -57653,6 +57668,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &9093580703418993411
 GameObject:
   m_ObjectHideFlags: 0
@@ -57688,7 +57704,7 @@ Transform:
   - {fileID: 9093580703107552429}
   - {fileID: 1943591982899589390}
   m_Father: {fileID: 9093580702294791639}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &9093580703418993409
 Grid:
@@ -61724,7 +61740,7 @@ Transform:
   - {fileID: 9093580703259399773}
   - {fileID: 4167738137859109631}
   m_Father: {fileID: 9093580702294791639}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &9093580703460437032
 Grid:
@@ -62012,6 +62028,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703567803168
 GameObject:
   m_ObjectHideFlags: 0
@@ -64057,6 +64074,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &9093580703651871842
 GameObject:
   m_ObjectHideFlags: 0
@@ -68024,6 +68042,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703730088043
 GameObject:
   m_ObjectHideFlags: 0
@@ -68247,6 +68266,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703804339659
 GameObject:
   m_ObjectHideFlags: 0
@@ -68405,6 +68425,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703838309535
 GameObject:
   m_ObjectHideFlags: 0
@@ -68532,6 +68553,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703846907306
 GameObject:
   m_ObjectHideFlags: 0
@@ -68753,6 +68775,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703953862058
 GameObject:
   m_ObjectHideFlags: 0
@@ -68880,6 +68903,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703959073541
 GameObject:
   m_ObjectHideFlags: 0
@@ -69007,6 +69031,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703966090331
 GameObject:
   m_ObjectHideFlags: 0
@@ -69134,6 +69159,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703981178565
 GameObject:
   m_ObjectHideFlags: 0
@@ -69261,6 +69287,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &9093580703982218738
 GameObject:
   m_ObjectHideFlags: 0
@@ -69386,6 +69413,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &9093580704176917355
 GameObject:
   m_ObjectHideFlags: 0
@@ -73261,7 +73289,7 @@ Transform:
   - {fileID: 9093580703783019442}
   - {fileID: 2329358350464800830}
   m_Father: {fileID: 9093580702294791639}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &9093580704230625999
 Grid:
@@ -73457,7 +73485,7 @@ Transform:
   - {fileID: 9093580703129297040}
   - {fileID: 1752374469668895941}
   m_Father: {fileID: 9093580702294791639}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &9093580704253664373
 Grid:
@@ -73743,6 +73771,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &9093580704276259097
 GameObject:
   m_ObjectHideFlags: 0
@@ -80113,6 +80142,72 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!1001 &1279679195731735106
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9093580702294791639}
+    m_Modifications:
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873462, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_Name
+      value: Level Transitioner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873463, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: Switch
+      value: 
+      objectReference: {fileID: 9093580703345569898}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+--- !u!4 &3970642137441894966 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+  m_PrefabInstance: {fileID: 1279679195731735106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6742312812225084162
 PrefabInstance:
   m_ObjectHideFlags: 0

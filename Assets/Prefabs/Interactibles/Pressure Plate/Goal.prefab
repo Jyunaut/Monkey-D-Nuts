@@ -126,4 +126,4 @@ MonoBehaviour:
   IsActive: 0
   CanInteract: 0
   TriggerTarget:
-  - {fileID: 0}
+  - {fileID: 2799225273954873462, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
