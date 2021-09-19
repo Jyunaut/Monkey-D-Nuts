@@ -16,12 +16,18 @@ public class DoorOpen : Interactible
     {
         base.DoBehaviour();
         _boxCollider2D.enabled = false;
-        //this.GetComponent<SpriteRenderer>().material.color.a = 1f;
+        Debug.Log("alpha up");
+        Color newColor = this.GetComponent<SpriteRenderer>().material.color;
+        newColor.a = 0.5f;
+        this.GetComponent<SpriteRenderer>().material.color = newColor;
     }
     public override void Stop()
     {
         base.Stop();
         _boxCollider2D.enabled = true;
-        //this.GetComponent<SpriteRenderer>().material.color.a = 0.5f;
+        Debug.Log("alpha down");
+        Color newColor = this.GetComponent<SpriteRenderer>().material.color;
+        newColor.a = 1f;
+        this.GetComponent<SpriteRenderer>().material.color = newColor;
     }
 }
