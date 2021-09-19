@@ -8,6 +8,9 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CameraMovement.cs" t="Include" />
+          <e p="Debug" t="Include">
+            <e p="FrameRateSetter.cs" t="Include" />
+          </e>
           <e p="ExitButton.cs" t="Include" />
           <e p="Helpers" t="Include">
             <e p="CameraEffect.cs" t="Include" />
