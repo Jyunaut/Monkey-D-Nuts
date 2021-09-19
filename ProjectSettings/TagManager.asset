@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Box
   - Switch
+  - Red
+  - Blue
+  - Green
   layers:
   - Default
   - TransparentFX
