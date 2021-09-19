@@ -62,6 +62,13 @@ public class ButtonObject : Interactible
         }
     }
 
+    public void OnTriggerEnter2D(Collider2D col)
+    {
+        _tripTarget = col.GetComponent<Interactible>();
+        if (_doDisableTriggerTarget == null && col != null && !_tripTarget.IsActive)
+            this.GetComponent<AudioSource>().Play();
+    }
+
     private void TriggerTargetCallback()
     {
         if(_tripTarget.IsActive)
