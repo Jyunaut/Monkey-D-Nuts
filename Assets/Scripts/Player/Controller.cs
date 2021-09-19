@@ -28,8 +28,13 @@ namespace Player
         public static bool CanMove { get; set; } = true;
         public static bool CanInteract { get; set; } = true;
 
-        public Vector2 Direction { get; set; }
         public Vector2 Velocity { get; set; }
+        public Vector2 Direction 
+        { 
+            get { return _direction; } 
+            set { _direction = value; SetDirection(); } 
+        }
+        private Vector2 _direction = Vector2.one;
 
         private void Awake()
         {
@@ -56,6 +61,12 @@ namespace Player
             State?.OnExit();
             State = state;
             State?.OnEnter();
+        }
+
+        private void SetDirection()
+        {
+            if ((_direction.x < 0 && transform.localScale.x > 0) || _direction.x > 0 && transform.localScale.x < 0)
+                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
     }
 }
