@@ -27,8 +27,8 @@ public class CameraMovement : MonoBehaviour {
 
     void LateUpdate() {
 	    Vector3 targetOffset = target.position + offsetPos;
-	    Vector3 smoothPos = Vector3.Lerp(transform.position, targetOffset, smoothSpeed);
-	    transform.position = smoothPos;
+	    //Vector3 smoothPos = Vector3.Lerp(transform.position, targetOffset, smoothSpeed);
+	    transform.position = targetOffset;
 	    transform.LookAt(target);
     }
     

@@ -35,14 +35,14 @@ public class TeleporttoStart : MonoBehaviour {
 			    // If player hits top boundary
 			    if (player.transform.position.y <=
 				    portalOther.transform.position.y) {
-				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y + portalHeight/2 + playerHeight/2, player.transform.position.z);
+				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y - portalHeight/2 - playerHeight, player.transform.position.z);
 				    player.transform.position = playerPos;
 			    }
 			    
 			    // If player hits bottom boundary
-			    else if (player.transform.position.y>=
+			    else if (player.transform.position.y >=
 				    portalOther.transform.position.y) {
-				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y - portalHeight/2 - playerHeight/2, player.transform.position.z);
+				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y + portalHeight/2 + playerHeight, player.transform.position.z);
 				    player.transform.position = playerPos;
 			    }
 			    
@@ -53,13 +53,13 @@ public class TeleporttoStart : MonoBehaviour {
 
 			    if (player.transform.position.x <=
 				    portalOther.transform.position.x) {
-				    playerPos = new Vector3(portalOther.transform.position.x - portalWidth/2 - playerWidth/2, lastPlayerY, player.transform.position.z);
+				    playerPos = new Vector3(portalOther.transform.position.x - portalWidth/2 - playerWidth, lastPlayerY, player.transform.position.z);
 				    player.transform.position = playerPos;
 				    
 			    }
 			    else if (player.transform.position.x >=
 				    portalOther.transform.position.x) {
-				    playerPos = new Vector3(portalOther.transform.position.x + portalWidth/2 + playerWidth/2, lastPlayerY, player.transform.position.z);
+				    playerPos = new Vector3(portalOther.transform.position.x + portalWidth/2 + playerWidth, lastPlayerY, player.transform.position.z);
 				    player.transform.position = playerPos;
 				    
 			    }
