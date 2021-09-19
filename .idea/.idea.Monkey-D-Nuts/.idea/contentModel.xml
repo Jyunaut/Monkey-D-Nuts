@@ -8,12 +8,19 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CameraMovement.cs" t="Include" />
+          <e p="ExitButton.cs" t="Include" />
+          <e p="Helpers" t="Include">
+            <e p="CameraEffect.cs" t="Include" />
+            <e p="CameraIntro.cs" t="Include" />
+          </e>
           <e p="Interactibles" t="Include">
             <e p="Box.cs" t="Include" />
             <e p="DoorOpen.cs" t="Include" />
             <e p="LevelTransitioner.cs" t="Include" />
+            <e p="TriggerCutScene.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
+            <e p="EffectsManager.cs" t="Include" />
             <e p="GameEvent.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="SceneController.cs" t="Include" />
@@ -23,6 +30,7 @@
             <e p="Inputs.cs" t="Include" />
             <e p="State.cs" t="Include" />
           </e>
+          <e p="StartButton.cs" t="Include" />
           <e p="Systems" t="Include">
             <e p="ButtonObject.cs" t="Include" />
             <e p="ButtonReceiver.cs" t="Include" />
