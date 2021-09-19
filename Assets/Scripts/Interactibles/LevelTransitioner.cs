@@ -17,6 +17,7 @@ public class LevelTransitioner : Interactible
     public override void DoBehaviour()
     {
         base.DoBehaviour();
+        Debug.Log("asdf");
         if(_doTransitionLevel != null)
             _doTransitionLevel();
     }
@@ -26,6 +27,7 @@ public class LevelTransitioner : Interactible
         GameEvent.CompleteLevel();
         EffectsManager.Instance.ScreenShake(0f, 3f, 90f, 5f, 8f);
         _doTransitionLevel = null;
+        Debug.Log("wa");
         Stop();
     }
 }
