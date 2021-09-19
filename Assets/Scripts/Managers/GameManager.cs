@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
         else
             Instance = this;
 
-        _transitionScreen.rectTransform.sizeDelta = new Vector2(Screen.width + 20f, Screen.height + 20f);
-        _transitionScreen.gameObject.SetActive(false);        
+        // _transitionScreen.rectTransform.sizeDelta = new Vector2(Screen.width + 20f, Screen.height + 20f);
+        // _transitionScreen.gameObject.SetActive(false);        
     }
 
     private void OnEnable()
@@ -43,23 +43,24 @@ public class GameManager : MonoBehaviour
     private IEnumerator LevelTransition()
     {
         Player.Controller.ControlsEnabled = false;
-        _transitionScreen.gameObject.SetActive(true);
-        for (float i = 0f; i < 1f; i += Time.deltaTime / _transitionTime)
-        {
-            _transitionScreen.color = new Color(0f, 0f, 0f, Mathf.Lerp(0f, 1f, i));
-            yield return null;
-        }
+        // _transitionScreen.gameObject.SetActive(true);
+        // for (float i = 0f; i < 1f; i += Time.deltaTime / _transitionTime)
+        // {
+        //     _transitionScreen.color = new Color(0f, 0f, 0f, Mathf.Lerp(0f, 1f, i));
+        //     yield return null;
+        // }
 
         // Do transition stuff
         _maps[CurrentMapIndex++].SetActive(false);
         _maps[CurrentMapIndex].SetActive(true);
 
-        for (float i = 0f; i < 1f; i += Time.deltaTime / _transitionTime)
-        {
-            _transitionScreen.color = new Color(0f, 0f, 0f, Mathf.Lerp(1f, 0f, i));
-            yield return null;
-        }
-        _transitionScreen.gameObject.SetActive(false);
+        // for (float i = 0f; i < 1f; i += Time.deltaTime / _transitionTime)
+        // {
+        //     _transitionScreen.color = new Color(0f, 0f, 0f, Mathf.Lerp(1f, 0f, i));
+        //     yield return null;
+        // }
+        // _transitionScreen.gameObject.SetActive(false);
         Player.Controller.ControlsEnabled = true;
+        yield return null;
     }
 }
