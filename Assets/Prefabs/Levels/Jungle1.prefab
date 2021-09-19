@@ -86,7 +86,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -263,12 +263,12 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 23918f6302fa7b341b442bb6a97d3e72, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 4aa4e910972dd6343bb86d620b5c46a9, type: 3}
   - m_RefCount: 1
@@ -514,7 +514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1605796889335539576
 Transform:
   m_ObjectHideFlags: 0
@@ -630,33 +630,9 @@ CompositeCollider2D:
   - m_Collider: {fileID: 6073608529191977168}
     m_ColliderPaths:
     - - X: 950600000
-        Y: 49399900
-      - X: 950600041
-        Y: 49399900
-      - X: 950600100
-        Y: 49399959
-      - X: 950600100
-        Y: 150600041
-      - X: 950600041
-        Y: 150600100
-      - X: 950600000
-        Y: 150600100
-      - X: 950600000
         Y: 350600000
       - X: -700600000
         Y: 350600000
-      - X: -700600000
-        Y: 150600100
-      - X: -700600041
-        Y: 150600100
-      - X: -700600100
-        Y: 150600041
-      - X: -700600100
-        Y: 49399959
-      - X: -700600041
-        Y: 49399900
-      - X: -700600000
-        Y: 49399900
       - X: -700600000
         Y: -850600000
       - X: 950600000
@@ -665,14 +641,8 @@ CompositeCollider2D:
         Y: -249400000
       - X: 599999
         Y: 149400000
-      - X: 99399908
-        Y: 149400000
-      - X: 99399908
-        Y: 49399959
-      - X: 99399967
-        Y: 49399900
       - X: 99400008
-        Y: 49399900
+        Y: 149400000
       - X: 99400008
         Y: -249400000
   m_CompositePaths:
@@ -684,7 +654,7 @@ CompositeCollider2D:
     - - {x: 9.940001, y: -24.939972}
       - {x: 0.0599999, y: -24.939972}
       - {x: 0.0600293, y: 14.940001}
-      - {x: 9.93999, y: 14.939971}
+      - {x: 9.940001, y: 14.939971}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!1 &1605796889931077927
