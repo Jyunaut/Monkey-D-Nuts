@@ -14,15 +14,19 @@ public class ButtonObject : Interactible
     {
         base.Awake();
         _tripTarget = TripTarget.GetComponent<Interactible>();
-        _triggerTarget = TripTarget.GetComponent<Interactible>();
+        _triggerTarget = TriggerTarget.GetComponent<Interactible>();
     }
 
-    public void OnTriggerEnter2D(Collider2D col)
+    public void OnTriggerStay2D(Collider2D col)
     {
-        if(col.gameObject == TripTarget.gameObject)
+        Debug.Log(col.gameObject.name);
+        if(col.gameObject.CompareTag("Box"))
         {
             if(!_tripTarget.IsActive)
+            {
+                TripTarget.transform.position = this.transform.position;
                 _triggerTarget.DoBehaviour();
+            }
         }
     }
 }

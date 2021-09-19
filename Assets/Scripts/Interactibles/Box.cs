@@ -21,6 +21,7 @@ public class Box : Interactible
 
     public override void DoBehaviour()
     {
+        base.DoBehaviour();
         Vector2 actor = Actor.GetComponent<Rigidbody2D>().position;
         Vector2 curPosition = new Vector2(offset.x + actor.x, offset.y + actor.y);
         Rigidbody2D.MovePosition(curPosition);

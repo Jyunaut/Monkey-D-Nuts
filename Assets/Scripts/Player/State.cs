@@ -60,7 +60,7 @@ namespace Player
             Collider2D[] hit = Physics2D.OverlapCircleAll(Controller.transform.position, radius);
             foreach (Collider2D obj in hit)
             {
-                if (obj.transform.tag == "Respawn")
+                if (obj.transform.tag == "Box")
                 {
                     Interactible interactible = obj.transform.GetComponent<Interactible>();
                     if (interactible.CanInteract)
