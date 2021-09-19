@@ -16,10 +16,12 @@ public class DoorOpen : Interactible
     {
         base.DoBehaviour();
         _boxCollider2D.enabled = false;
+        //this.GetComponent<SpriteRenderer>().material.color.a = 1f;
     }
     public override void Stop()
     {
         base.Stop();
         _boxCollider2D.enabled = true;
+        //this.GetComponent<SpriteRenderer>().material.color.a = 0.5f;
     }
 }

@@ -39870,6 +39870,7 @@ Transform:
   - {fileID: 9268895015403197}
   - {fileID: 9268895749296957}
   - {fileID: 3971596055108030709}
+  - {fileID: 5609627310964189418}
   m_Father: {fileID: 6971819282587762349}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44394,6 +44395,7 @@ Transform:
   - {fileID: 9268894111218625}
   - {fileID: 9268894946851514}
   - {fileID: 3971596054123586991}
+  - {fileID: 8345008563747800514}
   m_Father: {fileID: 6971819284031049088}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44890,6 +44892,7 @@ Transform:
   - {fileID: 9268894898072010}
   - {fileID: 9268895489058831}
   - {fileID: 3971596055710992349}
+  - {fileID: 6967393272002299003}
   m_Father: {fileID: 6971819282879966867}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44926,6 +44929,7 @@ Transform:
   - {fileID: 9268894766689296}
   - {fileID: 9268895290988236}
   - {fileID: 3971596054357788871}
+  - {fileID: 7657099972938636505}
   m_Father: {fileID: 6971819283311872820}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44962,6 +44966,7 @@ Transform:
   - {fileID: 9268895829328032}
   - {fileID: 9268893795645020}
   - {fileID: 3971596054960591070}
+  - {fileID: 5005385561063845193}
   m_Father: {fileID: 6971819282938108972}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44998,6 +45003,7 @@ Transform:
   - {fileID: 9268895225919554}
   - {fileID: 9268895215424555}
   - {fileID: 3971596055242102710}
+  - {fileID: 8979753523300377378}
   m_Father: {fileID: 6971819283882499669}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45398,6 +45404,7 @@ Transform:
   - {fileID: 9268895399598553}
   - {fileID: 9268895249751432}
   - {fileID: 3971596054041583422}
+  - {fileID: 9013495616362571536}
   m_Father: {fileID: 6971819284566318514}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -60886,6 +60893,7 @@ Transform:
   - {fileID: 1724603468672669312}
   - {fileID: 9268894687076629}
   - {fileID: 9268894948582792}
+  - {fileID: 1393163952677923856}
   m_Father: {fileID: 8577018660437320504}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -64682,6 +64690,7 @@ Transform:
   - {fileID: 9268894666658099}
   - {fileID: 9268893891118614}
   - {fileID: 3971596054301166948}
+  - {fileID: 1175698629478053170}
   m_Father: {fileID: 6971819284370009560}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -78402,6 +78411,68 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!1001 &22845608685045308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819283374194176}
+    m_Modifications:
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_Name
+      value: Red Pressure Plate (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!4 &6967393272002299003 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 22845608685045308}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &538105956039024103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78463,6 +78534,378 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2655988872547320548, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
   m_PrefabInstance: {fileID: 538105956039024103}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &766585463515668126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819283585135324}
+    m_Modifications:
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_Name
+      value: Red Pressure Plate (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!4 &7657099972938636505 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 766585463515668126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1382433162016753541
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819283099304544}
+    m_Modifications:
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_Name
+      value: Red Pressure Plate (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!4 &8345008563747800514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 1382433162016753541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2053202662473392485
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819283839486990}
+    m_Modifications:
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_Name
+      value: Red Pressure Plate (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!4 &8979753523300377378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 2053202662473392485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2159001239393248599
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819283889249166}
+    m_Modifications:
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_Name
+      value: Red Pressure Plate (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!4 &9013495616362571536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 2159001239393248599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2708560120335904526
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819283724233923}
+    m_Modifications:
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_Name
+      value: Red Pressure Plate (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!4 &5005385561063845193 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 2708560120335904526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3258751119381555885
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819282831563323}
+    m_Modifications:
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_Name
+      value: Red Pressure Plate (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!4 &5609627310964189418 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 3258751119381555885}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4014524351014338131
 PrefabInstance:
@@ -91849,6 +92292,130 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6953453160112848492, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
   m_PrefabInstance: {fileID: 6971819284717438721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8120242042989098869
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819284348713242}
+    m_Modifications:
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_Name
+      value: Red Pressure Plate (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!4 &1175698629478053170 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 8120242042989098869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8337725909180247639
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819284308354780}
+    m_Modifications:
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+      propertyPath: m_Name
+      value: Red Pressure Plate (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!4 &1393163952677923856 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 8337725909180247639}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8579087937488639175
 PrefabInstance:
