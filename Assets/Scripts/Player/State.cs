@@ -13,15 +13,16 @@ namespace Player
         {
             Controller = controller;
         }
-
-        public override void OnEnter()
-        {
-            Controller.Animator.Play(GetType().Name, 0, 0f);
-        }
     }
 
     class Idle : State
     {
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            // Controller.Animator.Play("Idle");
+        }
+
         public override void OnTransition()
         {
             if (Inputs.IsPressingMovement)
@@ -29,6 +30,7 @@ namespace Player
             if(Inputs.InteractAPress)
                 Controller.SetState(new Interact());
         }
+
     }
 
     class Move : State
@@ -46,49 +48,123 @@ namespace Player
         {
             if (!Inputs.IsPressingMovement)
                 Controller.SetState(new Idle());
+            if (Inputs.InteractAPress)
+                Controller.SetState(new Interact());
         }
     }
 
     class Interact : State
     {
-        private Action _doOnExit; // NOTE: Place holder until pick-up animation is implemented
         public override void OnEnter()
         {
             base.OnEnter();
-            
-            float radius = 1f;
+            Interactible interactible = null;
+            IEnumerator DoInteract(State state)
+            {
+                yield return new WaitForSeconds(0.15f);
+                if (interactible != null)
+                    Controller.SetState(state);
+                else
+                    Controller.SetState(new Idle());
+            }
+
+            float radius = 1.5f;
             Collider2D[] hit = Physics2D.OverlapCircleAll(Controller.transform.position, radius);
             foreach (Collider2D obj in hit)
             {
                 if (obj.transform.tag == "Box")
                 {
-                    Interactible interactible = obj.transform.GetComponent<Interactible>();
+                    interactible = obj.transform.GetComponent<Interactible>();
                     if (interactible.CanInteract)
                     {
-                        interactible.Interact(Controller);
-                        break;
+                        if(interactible.gameObject.CompareTag("Box"))
+                        {
+                            if(interactible.IsActive)
+                                Controller.StartCoroutine(DoInteract(new Drop(interactible)));
+                            else
+                                Controller.StartCoroutine(DoInteract(new PickUp(interactible)));
+                        }
+                        else if(interactible.gameObject.CompareTag("Switch"))
+                            Controller.StartCoroutine(DoInteract(new Kick(interactible)));
+                        return;
                     }
                 }
             }
-            _doOnExit = () =>
-            {
-                float waitTime = 0.15f;
-                _doOnExit = null;
-                Controller.StartCoroutine(wait());
-                IEnumerator wait()
-                {
-                    yield return new WaitForSeconds(waitTime);
-                    Controller.SetState(new Idle());
-                }
-            };
+            Controller.SetState(new Idle());
+        }
+    }
+    
+    class Kick : State
+    {
+        private Interactible _interactible;
 
+        public Kick(Interactible interactible = null)
+        {
+            _interactible = interactible;
         }
 
-        public override void OnTransition()
+        public override void OnEnter()
         {
-            base.OnTransition();
-            if (_doOnExit != null)
-                _doOnExit();
+            base.OnEnter();
+            Controller.StartCoroutine(DoDrop());
+            IEnumerator DoDrop()
+            {
+                Controller.Animator.Play("Kick");
+                _interactible.Interact(Controller);
+                yield return new WaitForSeconds(0.15f);
+                if(_interactible != null)
+                    Controller.SetState(new Idle());
+
+            }
+        }
+    }
+
+    class PickUp : State
+    {
+        private Interactible _interactible;
+
+        public PickUp(Interactible interactible = null)
+        {
+            _interactible = interactible;
+        }
+
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            Controller.StartCoroutine(DoDrop());
+            IEnumerator DoDrop()
+            {
+                Controller.Animator.Play("Pickup");
+                _interactible.Interact(Controller);
+                yield return new WaitForSeconds(0.3f);
+                if(_interactible != null)
+                    Controller.SetState(new Idle());
+
+            }
+        }
+    }
+
+    class Drop : State
+    {
+        private Interactible _interactible;
+
+        public Drop(Interactible interactible = null)
+        {
+            _interactible = interactible;
+        }
+
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            Controller.StartCoroutine(DoDrop());
+            _interactible.Interact(Controller);
+            IEnumerator DoDrop()
+            {
+                Controller.Animator.Play("Drop");
+                yield return new WaitForSeconds(0.5f);
+                Controller.Animator.Play("Idle");
+                Controller.SetState(new Idle());
+            }
         }
     }
 }

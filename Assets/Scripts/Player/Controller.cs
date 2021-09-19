@@ -55,7 +55,7 @@ namespace Player
         {
             State?.OnExit();
             State = state;
-            State.OnEnter();
+            State?.OnEnter();
         }
     }
 }

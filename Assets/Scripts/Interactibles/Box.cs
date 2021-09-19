@@ -22,15 +22,22 @@ public class Box : Interactible
     public override void DoBehaviour()
     {
         base.DoBehaviour();
-        Vector2 actor = Actor.GetComponent<Rigidbody2D>().position;
-        Vector2 curPosition = new Vector2(offset.x + actor.x, offset.y + actor.y);
+        actorPosition = Actor.GetComponent<Rigidbody2D>().position;
+        Vector2 curPosition = new Vector2(offset.x + actorPosition.x, offset.y + actorPosition.y);
         Rigidbody2D.MovePosition(curPosition);
     }
 
     public override void Interact(Controller actor)
     {
-        if(Action != null) { Stop(); } // Drop box
-        else { base.Interact(actor); }
+        if(Action != null) 
+        { 
+            Stop(); // Drop box
+            Rigidbody2D.MovePosition(new Vector2(actorPosition.x, actorPosition.y -0.61f));
+        }
+        else 
+        { 
+            base.Interact(actor); 
+        }
     }
 
     protected override void OnEnter()
