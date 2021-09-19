@@ -8,6 +8,7 @@ public class TriggerCutScene : Interactible
 {
     private PlayableDirector _playableDirector;
     private bool _triggered;
+    [SerializeField] private GameManager _gameManager;
 
     protected override void Awake()
     {
@@ -18,6 +19,7 @@ public class TriggerCutScene : Interactible
     {
         if (!_triggered)
         {
+            _gameManager.GetComponent<AudioSource>().Stop();
             Camera.main.GetComponentInParent<CameraMovement>().enabled = false;
             Player.Controller.ControlsEnabled = false;
             _playableDirector.Play();

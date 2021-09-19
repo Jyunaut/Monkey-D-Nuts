@@ -43,4 +43,9 @@ public class EffectsManager : MonoBehaviour
             _camera.transform.localPosition = Vector3.zero;
         }
     }
+
+    public void ShakeSound()
+    {
+        GetComponent<AudioSource>().Play();
+    }
 }
