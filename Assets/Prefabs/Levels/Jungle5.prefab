@@ -29504,6 +29504,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979307745840
 GameObject:
   m_ObjectHideFlags: 0
@@ -29662,6 +29663,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979327285359
 GameObject:
   m_ObjectHideFlags: 0
@@ -29787,6 +29789,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979459835767
 GameObject:
   m_ObjectHideFlags: 0
@@ -29822,7 +29825,7 @@ Transform:
   - {fileID: 5719638980045261549}
   - {fileID: 448821659712415623}
   m_Father: {fileID: 5719638981288949870}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5719638979459835765
 Grid:
@@ -30162,6 +30165,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979471015741
 GameObject:
   m_ObjectHideFlags: 0
@@ -30176,7 +30180,7 @@ GameObject:
   - component: {fileID: 5719638979471015731}
   m_Layer: 7
   m_Name: Red Pressure Plate (1)
-  m_TagString: Red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30289,6 +30293,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979488815687
 GameObject:
   m_ObjectHideFlags: 0
@@ -30303,7 +30308,7 @@ GameObject:
   - component: {fileID: 5719638979488815685}
   m_Layer: 7
   m_Name: Green Pressure Plate
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30416,6 +30421,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979493389708
 GameObject:
   m_ObjectHideFlags: 0
@@ -30574,6 +30580,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979500641536
 GameObject:
   m_ObjectHideFlags: 0
@@ -30732,6 +30739,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979529832411
 GameObject:
   m_ObjectHideFlags: 0
@@ -30857,6 +30865,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979598399040
 GameObject:
   m_ObjectHideFlags: 0
@@ -30892,7 +30901,7 @@ Transform:
   - {fileID: 5719638979236119208}
   - {fileID: 720157444276225820}
   m_Father: {fileID: 5719638981288949870}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5719638979598399046
 Grid:
@@ -31234,6 +31243,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979621040812
 GameObject:
   m_ObjectHideFlags: 0
@@ -31359,6 +31369,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979625749170
 GameObject:
   m_ObjectHideFlags: 0
@@ -31373,7 +31384,7 @@ GameObject:
   - component: {fileID: 5719638979625749168}
   m_Layer: 7
   m_Name: Green Pressure Plate (1)
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31486,6 +31497,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979627826217
 GameObject:
   m_ObjectHideFlags: 0
@@ -31613,6 +31625,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979696641394
 GameObject:
   m_ObjectHideFlags: 0
@@ -31627,7 +31640,7 @@ GameObject:
   - component: {fileID: 5719638979696641392}
   m_Layer: 7
   m_Name: Green Pressure Plate
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31740,6 +31753,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979712378643
 GameObject:
   m_ObjectHideFlags: 0
@@ -34265,6 +34279,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979716680870
 GameObject:
   m_ObjectHideFlags: 0
@@ -34300,7 +34315,7 @@ Transform:
   - {fileID: 5719638980152203927}
   - {fileID: 5845061539073187431}
   m_Father: {fileID: 5719638981288949870}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5719638979716680868
 Grid:
@@ -34642,6 +34657,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979767033596
 GameObject:
   m_ObjectHideFlags: 0
@@ -34767,6 +34783,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638979772326121
 GameObject:
   m_ObjectHideFlags: 0
@@ -34781,7 +34798,7 @@ GameObject:
   - component: {fileID: 5719638979772326127}
   m_Layer: 7
   m_Name: Red Pressure Plate (1)
-  m_TagString: Red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34894,6 +34911,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979808050226
 GameObject:
   m_ObjectHideFlags: 0
@@ -37308,7 +37326,7 @@ GameObject:
   - component: {fileID: 5719638979810607226}
   m_Layer: 7
   m_Name: Green Pressure Plate (1)
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37421,6 +37439,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979853985928
 GameObject:
   m_ObjectHideFlags: 0
@@ -39835,7 +39854,7 @@ GameObject:
   - component: {fileID: 5719638979897223821}
   m_Layer: 7
   m_Name: Green Pressure Plate
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39948,6 +39967,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979952213119
 GameObject:
   m_ObjectHideFlags: 0
@@ -39962,7 +39982,7 @@ GameObject:
   - component: {fileID: 5719638979952213117}
   m_Layer: 7
   m_Name: Green Pressure Plate
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40075,6 +40095,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979954349178
 GameObject:
   m_ObjectHideFlags: 0
@@ -40089,7 +40110,7 @@ GameObject:
   - component: {fileID: 5719638979954349176}
   m_Layer: 7
   m_Name: Red Pressure Plate (1)
-  m_TagString: Red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40202,6 +40223,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979958044017
 GameObject:
   m_ObjectHideFlags: 0
@@ -40216,7 +40238,7 @@ GameObject:
   - component: {fileID: 5719638979958044023}
   m_Layer: 7
   m_Name: Green Pressure Plate
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40329,6 +40351,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638979989018066
 GameObject:
   m_ObjectHideFlags: 0
@@ -42888,6 +42911,9 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches:
+  - {fileID: 5719638980071843889}
+  - {fileID: 5719638980568267440}
 --- !u!1 &5719638980045261550
 GameObject:
   m_ObjectHideFlags: 0
@@ -45336,7 +45362,7 @@ GameObject:
   - component: {fileID: 5719638980048245608}
   m_Layer: 7
   m_Name: Green Pressure Plate (1)
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45449,6 +45475,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980065071177
 GameObject:
   m_ObjectHideFlags: 0
@@ -45609,6 +45636,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980108410323
 GameObject:
   m_ObjectHideFlags: 0
@@ -45736,6 +45764,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980111035138
 GameObject:
   m_ObjectHideFlags: 0
@@ -45750,7 +45779,7 @@ GameObject:
   - component: {fileID: 5719638980111035136}
   m_Layer: 7
   m_Name: Green Pressure Plate
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45863,6 +45892,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980123373100
 GameObject:
   m_ObjectHideFlags: 0
@@ -48310,7 +48340,7 @@ GameObject:
   - component: {fileID: 5719638980127584450}
   m_Layer: 7
   m_Name: Green Pressure Plate (1)
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48423,6 +48453,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980132176867
 GameObject:
   m_ObjectHideFlags: 0
@@ -48550,6 +48581,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980142637139
 GameObject:
   m_ObjectHideFlags: 0
@@ -51066,7 +51098,7 @@ GameObject:
   - component: {fileID: 5719638980171710487}
   m_Layer: 7
   m_Name: Green Pressure Plate (1)
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51179,6 +51211,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980195790632
 GameObject:
   m_ObjectHideFlags: 0
@@ -51337,6 +51370,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980219350848
 GameObject:
   m_ObjectHideFlags: 0
@@ -51462,6 +51496,8 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches:
+  - {fileID: 5719638979736871804}
 --- !u!1 &5719638980261341029
 GameObject:
   m_ObjectHideFlags: 0
@@ -51587,6 +51623,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980262639526
 GameObject:
   m_ObjectHideFlags: 0
@@ -51746,6 +51783,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980281752708
 GameObject:
   m_ObjectHideFlags: 0
@@ -51781,7 +51819,7 @@ Transform:
   - {fileID: 5719638980579342307}
   - {fileID: 9072500574473234432}
   m_Father: {fileID: 5719638981288949870}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5719638980281752826
 Grid:
@@ -54431,7 +54469,7 @@ Transform:
   - {fileID: 5719638980158733780}
   - {fileID: 2711187363763262115}
   m_Father: {fileID: 5719638981288949870}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5719638980352301594
 Grid:
@@ -57171,6 +57209,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980432303892
 GameObject:
   m_ObjectHideFlags: 0
@@ -57296,6 +57335,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980483983751
 GameObject:
   m_ObjectHideFlags: 0
@@ -57421,6 +57461,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980506356732
 GameObject:
   m_ObjectHideFlags: 0
@@ -57469,7 +57510,7 @@ GameObject:
   - component: {fileID: 5719638980512972385}
   m_Layer: 7
   m_Name: Green Pressure Plate (1)
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57582,6 +57623,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980554251773
 GameObject:
   m_ObjectHideFlags: 0
@@ -57617,7 +57659,7 @@ Transform:
   - {fileID: 5719638980506356723}
   - {fileID: 49081914672081433}
   m_Father: {fileID: 5719638981288949870}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5719638980554251763
 Grid:
@@ -57867,7 +57909,7 @@ Transform:
   - {fileID: 5719638980262639525}
   - {fileID: 5781363901001060084}
   m_Father: {fileID: 5719638981288949870}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5719638980559276847
 Grid:
@@ -58209,6 +58251,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980579342316
 GameObject:
   m_ObjectHideFlags: 0
@@ -58370,6 +58413,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980680454802
 GameObject:
   m_ObjectHideFlags: 0
@@ -58384,7 +58428,7 @@ GameObject:
   - component: {fileID: 5719638980680454800}
   m_Layer: 7
   m_Name: Red Pressure Plate (1)
-  m_TagString: Red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58497,6 +58541,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980749725792
 GameObject:
   m_ObjectHideFlags: 0
@@ -58532,7 +58577,7 @@ Transform:
   - {fileID: 5719638979989018065}
   - {fileID: 2379208770296739572}
   m_Father: {fileID: 5719638981288949870}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5719638980749725798
 Grid:
@@ -58833,7 +58878,7 @@ GameObject:
   - component: {fileID: 5719638980778734055}
   m_Layer: 7
   m_Name: Green Pressure Plate (1)
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58946,6 +58991,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980821813395
 GameObject:
   m_ObjectHideFlags: 0
@@ -58960,7 +59006,7 @@ GameObject:
   - component: {fileID: 5719638980821813393}
   m_Layer: 7
   m_Name: Red Pressure Plate (1)
-  m_TagString: Red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59073,6 +59119,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980825657366
 GameObject:
   m_ObjectHideFlags: 0
@@ -59087,7 +59134,7 @@ GameObject:
   - component: {fileID: 5719638980825657364}
   m_Layer: 7
   m_Name: Red Pressure Plate (1)
-  m_TagString: Red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59200,6 +59247,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980853200537
 GameObject:
   m_ObjectHideFlags: 0
@@ -59214,7 +59262,7 @@ GameObject:
   - component: {fileID: 5719638980853200543}
   m_Layer: 7
   m_Name: Green Pressure Plate
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59327,6 +59375,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638980874064194
 GameObject:
   m_ObjectHideFlags: 0
@@ -59452,6 +59501,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980911634222
 GameObject:
   m_ObjectHideFlags: 0
@@ -59577,6 +59627,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980959529177
 GameObject:
   m_ObjectHideFlags: 0
@@ -59702,6 +59753,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980969980968
 GameObject:
   m_ObjectHideFlags: 0
@@ -59827,6 +59879,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638980977237132
 GameObject:
   m_ObjectHideFlags: 0
@@ -59841,7 +59894,7 @@ GameObject:
   - component: {fileID: 5719638980977237122}
   m_Layer: 7
   m_Name: Red Pressure Plate (1)
-  m_TagString: Red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59954,6 +60007,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638981052609820
 GameObject:
   m_ObjectHideFlags: 0
@@ -59989,7 +60043,7 @@ Transform:
   - {fileID: 5719638980142637138}
   - {fileID: 2556485936821715437}
   m_Father: {fileID: 5719638981288949870}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5719638981052609810
 Grid:
@@ -60331,6 +60385,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638981128762038
 GameObject:
   m_ObjectHideFlags: 0
@@ -60345,7 +60400,7 @@ GameObject:
   - component: {fileID: 5719638981128762036}
   m_Layer: 7
   m_Name: Green Pressure Plate (1)
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60458,6 +60513,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638981131876711
 GameObject:
   m_ObjectHideFlags: 0
@@ -60583,6 +60639,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638981262827857
 GameObject:
   m_ObjectHideFlags: 0
@@ -60743,6 +60800,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638981286709100
 GameObject:
   m_ObjectHideFlags: 0
@@ -60868,6 +60926,8 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches:
+  - {fileID: 5719638979736871804}
 --- !u!1 &5719638981288949871
 GameObject:
   m_ObjectHideFlags: 0
@@ -60895,6 +60955,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 6484188309399048993}
   - {fileID: 5719638980749725799}
   - {fileID: 5719638979598399047}
   - {fileID: 5719638979459835766}
@@ -60921,7 +60982,7 @@ GameObject:
   - component: {fileID: 5719638981305946233}
   m_Layer: 7
   m_Name: Red Pressure Plate (1)
-  m_TagString: Red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61034,6 +61095,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638981317631921
 GameObject:
   m_ObjectHideFlags: 0
@@ -61159,6 +61221,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638981332907187
 GameObject:
   m_ObjectHideFlags: 0
@@ -61286,6 +61349,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638981334076086
 GameObject:
   m_ObjectHideFlags: 0
@@ -61300,7 +61364,7 @@ GameObject:
   - component: {fileID: 5719638981334076084}
   m_Layer: 7
   m_Name: Green Pressure Plate
-  m_TagString: Green
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61413,6 +61477,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638981347413794
 GameObject:
   m_ObjectHideFlags: 0
@@ -61540,6 +61605,7 @@ MonoBehaviour:
   CanInteract: 0
   TriggerTarget:
   - {fileID: 0}
+  _levelTransitioner: {fileID: 0}
 --- !u!1 &5719638981353814586
 GameObject:
   m_ObjectHideFlags: 0
@@ -61665,6 +61731,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &5719638981365934153
 GameObject:
   m_ObjectHideFlags: 0
@@ -61790,6 +61857,7 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 0
+  Switches: []
 --- !u!1 &7264968009976438357
 GameObject:
   m_ObjectHideFlags: 0
@@ -85266,3 +85334,69 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!1001 &9161639303176561493
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5719638981288949870}
+    m_Modifications:
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873462, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_Name
+      value: Level Transitioner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873463, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: Switch
+      value: 
+      objectReference: {fileID: 5719638980108410323}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+--- !u!4 &6484188309399048993 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+  m_PrefabInstance: {fileID: 9161639303176561493}
+  m_PrefabAsset: {fileID: 0}

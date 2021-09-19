@@ -11,6 +11,8 @@ public class ButtonObject : Interactible
     private Interactible _tripTarget;
     private Action _doDisableTriggerTarget;
 
+    [SerializeField] private GameObject _levelTransitioner;
+
     protected override void Awake()
     {
         base.Awake();
@@ -31,11 +33,21 @@ public class ButtonObject : Interactible
         if (_doDisableTriggerTarget != null)
             _doDisableTriggerTarget();
     }
+    private bool _triggered;
 
     public void OnTriggerStay2D(Collider2D col)
     {
         if(col != null)
         {
+            if (_levelTransitioner != null && col.gameObject.CompareTag("Box") && !_triggered)
+            {
+                var asdf = _levelTransitioner.GetComponent<TriggerCutScene>();
+                if (asdf != null)
+                {
+                    asdf.PlayCutscene();
+                    _triggered = true;
+                }
+            }
             if(_doDisableTriggerTarget == null)
                 _tripTarget = col.GetComponent<Interactible>();
             if (!_tripTarget.IsActive)

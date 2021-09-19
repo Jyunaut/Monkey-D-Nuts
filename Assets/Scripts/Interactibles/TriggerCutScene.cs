@@ -14,11 +14,11 @@ public class TriggerCutScene : Interactible
         _playableDirector = GetComponent<PlayableDirector>();
     }
 
-    public override void DoBehaviour()
+    public void PlayCutscene()
     {
-        base.DoBehaviour();
         if (!_triggered)
         {
+            Camera.main.GetComponentInParent<CameraMovement>().enabled = false;
             Player.Controller.ControlsEnabled = false;
             _playableDirector.Play();
             _triggered = true;

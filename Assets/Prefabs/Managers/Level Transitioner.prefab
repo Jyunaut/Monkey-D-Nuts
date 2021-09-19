@@ -46,3 +46,4 @@ MonoBehaviour:
   Actor: {fileID: 0}
   IsActive: 0
   CanInteract: 1
+  Switch: {fileID: 4380786788765849759, guid: 709db60788d46cb48b5c0d72074c00d9, type: 3}

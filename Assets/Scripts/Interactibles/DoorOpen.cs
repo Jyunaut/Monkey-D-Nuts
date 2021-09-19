@@ -7,16 +7,28 @@ public class DoorOpen : Interactible
 {
     private BoxCollider2D _boxCollider2D;
     public GameObject[] Switches;
+    private SpriteRenderer _spriteRenderer;
 
     protected override void Awake()
     {
         _boxCollider2D = this.GetComponent<BoxCollider2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     protected override void Update()
     {
         base.Update();
         _boxCollider2D.enabled = !CheckSwitches();
+        if (!_boxCollider2D.enabled)
+            _spriteRenderer.material.color = new Color(_spriteRenderer.material.color.r,
+                                                    _spriteRenderer.material.color.g,
+                                                    _spriteRenderer.material.color.b,
+                                                    0.5f);
+        else
+            _spriteRenderer.material.color = new Color(_spriteRenderer.material.color.r,
+                                                    _spriteRenderer.material.color.g,
+                                                    _spriteRenderer.material.color.b,
+                                                    1f);
     }
 
     private bool CheckSwitches()

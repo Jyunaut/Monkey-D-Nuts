@@ -26290,7 +26290,7 @@ Transform:
   - {fileID: 6971819284308354780}
   - {fileID: 8742353384291169935}
   m_Father: {fileID: 6971819284516701822}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6355477959270100879
 Grid:
@@ -35700,7 +35700,7 @@ Transform:
   - {fileID: 6971819282831563323}
   - {fileID: 1720740395919996587}
   m_Father: {fileID: 6971819284516701822}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6971819282587762386
 Grid:
@@ -39909,7 +39909,7 @@ Transform:
   - {fileID: 6971819283374194176}
   - {fileID: 4230662918636172321}
   m_Father: {fileID: 6971819284516701822}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6971819282879966864
 Grid:
@@ -44033,7 +44033,7 @@ Transform:
   - {fileID: 6971819283724233923}
   - {fileID: 358931329425462339}
   m_Father: {fileID: 6971819284516701822}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6971819282938108973
 Grid:
@@ -44482,7 +44482,7 @@ Transform:
   - {fileID: 6971819283585135324}
   - {fileID: 4268529826298510355}
   m_Father: {fileID: 6971819284516701822}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6971819283311872821
 Grid:
@@ -45042,7 +45042,7 @@ Transform:
   - {fileID: 6971819283839486990}
   - {fileID: 7305060064450303705}
   m_Father: {fileID: 6971819284516701822}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6971819283882499674
 Grid:
@@ -45443,7 +45443,7 @@ Transform:
   - {fileID: 6971819283099304544}
   - {fileID: 6320021318973119520}
   m_Father: {fileID: 6971819284516701822}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6971819284031049089
 Grid:
@@ -64729,7 +64729,7 @@ Transform:
   - {fileID: 6971819284348713242}
   - {fileID: 3624874610405734990}
   m_Father: {fileID: 6971819284516701822}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6971819284370009561
 Grid:
@@ -68845,6 +68845,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 8996891983590183094}
   - {fileID: 8577018660437320504}
   - {fileID: 6971819284370009560}
   - {fileID: 6971819283311872820}
@@ -69036,7 +69037,7 @@ Transform:
   - {fileID: 6971819283889249166}
   - {fileID: 7672021918437523262}
   m_Father: {fileID: 6971819284516701822}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6971819284566318515
 Grid:
@@ -78524,6 +78525,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894948582788}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door
@@ -78958,6 +78967,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -270
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1724603468672669324}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268894687076633}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1393163952677923868}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door
@@ -79026,6 +79051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
+--- !u!1 &6632481653918807087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7351403034154587490, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
+  m_PrefabInstance: {fileID: 4183317322035061069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6632481653918807075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7351403034154587502, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
@@ -79092,10 +79122,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48ab450d8e64b794fb30a21a20691945, type: 3}
+--- !u!1 &9268894948582788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6331235491835464675, guid: 48ab450d8e64b794fb30a21a20691945, type: 3}
+  m_PrefabInstance: {fileID: 6340504365306752615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9268894948582792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6331235491835464687, guid: 48ab450d8e64b794fb30a21a20691945, type: 3}
   m_PrefabInstance: {fileID: 6340504365306752615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6486231406041358530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6971819284516701822}
+    m_Modifications:
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873462, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: m_Name
+      value: Level Transitioner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799225273954873463, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+      propertyPath: Switch
+      value: 
+      objectReference: {fileID: 6632481655260138025}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+--- !u!4 &8996891983590183094 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2799225273954873460, guid: 682bf1e72a725a5409822bc5f7ee3ffb, type: 3}
+  m_PrefabInstance: {fileID: 6486231406041358530}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6971819282589039857
 PrefabInstance:
@@ -79774,6 +79875,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
+--- !u!1 &487953017837305348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7351403034154587490, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
+  m_PrefabInstance: {fileID: 6971819282653440870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &487953017837305352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7351403034154587502, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
@@ -80032,6 +80138,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -270
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894666658111}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268893891118618}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1175698629478053182}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door
@@ -80590,6 +80712,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894948582788}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (2)
@@ -81536,6 +81666,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 487953017837305348}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953018216153367}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (1)
@@ -81598,6 +81740,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 3971596054301166952}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (2)
@@ -81660,6 +81810,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 6632481653918807087}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953017370630415}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (3)
@@ -81908,6 +82070,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 6632481653918807087}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953017370630415}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (4)
@@ -82451,6 +82625,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6331235491835464687, guid: 48ab450d8e64b794fb30a21a20691945, type: 3}
   m_PrefabInstance: {fileID: 6971819282972018315}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3971596054301166952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6331235491835464675, guid: 48ab450d8e64b794fb30a21a20691945, type: 3}
+  m_PrefabInstance: {fileID: 6971819282972018315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6971819282977612540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82890,6 +83069,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1724603468672669324}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268894687076633}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1393163952677923868}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (4)
@@ -83700,6 +83895,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 3971596054301166952}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (1)
@@ -83824,6 +84027,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 3971596054301166952}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (3)
@@ -83948,6 +84159,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894948582788}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (8)
@@ -84010,6 +84229,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894948582788}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (1)
@@ -84072,6 +84299,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 487953017837305348}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953018216153367}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (6)
@@ -84395,6 +84634,11 @@ PrefabInstance:
 --- !u!4 &487953017370630403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7351403034154587502, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
+  m_PrefabInstance: {fileID: 6971819283260607597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &487953017370630415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7351403034154587490, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
   m_PrefabInstance: {fileID: 6971819283260607597}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6971819283285010858
@@ -85568,6 +85812,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1724603468672669324}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268894687076633}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1393163952677923868}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (6)
@@ -85692,6 +85952,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1724603468672669324}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268894687076633}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1393163952677923868}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (3)
@@ -85816,6 +86092,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894666658111}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268893891118618}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1175698629478053182}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (1)
@@ -86312,6 +86604,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -270
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1724603468672669324}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268894687076633}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1393163952677923868}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (2)
@@ -86684,6 +86992,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894666658111}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268893891118618}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1175698629478053182}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (6)
@@ -86808,6 +87132,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894948582788}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (3)
@@ -87684,6 +88016,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894666658111}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268893891118618}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1175698629478053182}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (4)
@@ -87886,6 +88234,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 487953017837305348}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953018216153367}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (2)
@@ -88072,6 +88432,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894948582788}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (7)
@@ -88196,6 +88564,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -270
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894666658111}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268893891118618}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1175698629478053182}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (2)
@@ -88770,6 +89154,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 6632481653918807087}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953017370630415}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (2)
@@ -89029,6 +89425,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
   m_PrefabInstance: {fileID: 6971819284144718929}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9268893891118618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 6971819284144718929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6971819284177904947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89080,6 +89481,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 487953017837305348}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953018216153367}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (3)
@@ -89638,6 +90051,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 3971596054301166952}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (8)
@@ -89952,6 +90373,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 487953017837305348}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953018216153367}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door
@@ -90362,6 +90795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 709db60788d46cb48b5c0d72074c00d9, type: 3}
+--- !u!1 &6632481655260138025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4380786788765849759, guid: 709db60788d46cb48b5c0d72074c00d9, type: 3}
+  m_PrefabInstance: {fileID: 6971819284386255542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6632481655260138021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4380786788765849747, guid: 709db60788d46cb48b5c0d72074c00d9, type: 3}
@@ -90427,6 +90865,11 @@ PrefabInstance:
 --- !u!4 &9268894666658099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 6971819284392334196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9268894666658111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
   m_PrefabInstance: {fileID: 6971819284392334196}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6971819284401974228
@@ -90553,6 +90996,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
   m_PrefabInstance: {fileID: 6971819284405543762}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9268894687076633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 6971819284405543762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6971819284422062932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90666,6 +91114,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 3971596054301166952}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door
@@ -90728,6 +91184,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 487953017837305348}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953018216153367}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (4)
@@ -90790,6 +91258,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 6632481653918807087}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953017370630415}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (6)
@@ -90914,6 +91394,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 9268894666658111}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268893891118618}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1175698629478053182}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (3)
@@ -91100,6 +91596,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369785283829202674, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 3971596054301166952}
     - target: {fileID: 6704430869843006108, guid: 08cfea3151b6f8b4aa50e08fd86fea15, type: 3}
       propertyPath: m_Name
       value: Blue Door (7)
@@ -91286,6 +91790,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 1724603468672669324}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 9268894687076633}
+    - target: {fileID: 7456536405529877101, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
+      propertyPath: Switches.Array.data[2]
+      value: 
+      objectReference: {fileID: 1393163952677923868}
     - target: {fileID: 7456536405529877102, guid: 5a933e0655bf46340a86c04527bd3e12, type: 3}
       propertyPath: m_Name
       value: Red Door (1)
@@ -91844,6 +92364,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 6632481653918807087}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953017370630415}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door (1)
@@ -91912,6 +92444,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
+--- !u!1 &487953018216153367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7351403034154587490, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
+  m_PrefabInstance: {fileID: 6971819284693111925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &487953018216153371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7351403034154587502, guid: d3e7b64e8a7037d4f88d7c62c917929b, type: 3}
@@ -92350,6 +92887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+--- !u!1 &1175698629478053182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 8120242042989098869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1175698629478053170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
@@ -92417,6 +92959,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
   m_PrefabInstance: {fileID: 8337725909180247639}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1393163952677923868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 8337725909180247639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8579087937488639175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92479,6 +93026,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6980595579461911111, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
   m_PrefabInstance: {fileID: 8579087937488639175}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1724603468672669324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6980595579461911115, guid: 8a60d821fa7bf6b43ac5c27d4bdf6e15, type: 3}
+  m_PrefabInstance: {fileID: 8579087937488639175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8766608795942972038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92530,6 +93082,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[0]
+      value: 
+      objectReference: {fileID: 6632481653918807087}
+    - target: {fileID: 7225679945103117708, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
+      propertyPath: Switches.Array.data[1]
+      value: 
+      objectReference: {fileID: 487953017370630415}
     - target: {fileID: 8659506882729763109, guid: f82bade1f18c40d4aad48e26b5b53b4d, type: 3}
       propertyPath: m_Name
       value: Green Door
