@@ -57,12 +57,5 @@ namespace Player
             State = state;
             State.OnEnter();
         }
-
-        public void SetInteractible(Interactible obj)
-        {
-            Object?.Stop();
-            Object = obj;
-            Object.Interact(this);
-        }
     }
 }

@@ -8,6 +8,8 @@ public abstract class Interactible : MonoBehaviour
 {
     public Controller Actor;
     public Action Action;
+    public bool IsActive = false;
+    public bool CanInteract = true;
 
     protected virtual void Awake() { Action = null; }
 
@@ -16,7 +18,6 @@ public abstract class Interactible : MonoBehaviour
     public virtual void Interact(Controller actor)
     {
         Actor = actor;
-        Action = DoBehaviour;
         OnEnter();
     }
 
@@ -26,7 +27,7 @@ public abstract class Interactible : MonoBehaviour
         OnExit();
     }
 
-    public virtual void DoBehaviour() { }
-    protected virtual void OnExit() { }
-    protected virtual void OnEnter() { }
+    public virtual void DoBehaviour() { IsActive = true; }
+    protected virtual void OnEnter() { Action = DoBehaviour; }
+    protected virtual void OnExit() { IsActive = false; }
 }

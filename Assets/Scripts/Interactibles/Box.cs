@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -7,6 +8,7 @@ using UnityEngine;
 public class Box : Interactible
 {
     public Vector2 offset;
+
     private Rigidbody2D Rigidbody2D;
     private Vector2 actorPosition;
 
@@ -19,25 +21,27 @@ public class Box : Interactible
 
     public override void DoBehaviour()
     {
+        base.DoBehaviour();
         Vector2 actor = Actor.GetComponent<Rigidbody2D>().position;
         Vector2 curPosition = new Vector2(offset.x + actor.x, offset.y + actor.y);
         Rigidbody2D.MovePosition(curPosition);
     }
 
-    public override void Stop()
+    public override void Interact(Controller actor)
     {
-        base.Stop();
-        Rigidbody2D.velocity = Vector2.zero;
+        if(Action != null) { Stop(); } // Drop box
+        else { base.Interact(actor); }
     }
 
     protected override void OnEnter()
     {
         base.OnEnter();
-        // Actor.SetSpeedMultiplier(0.5f); // NOTE: slowing the player does not make sense since there is nothing to exploit the vulnerableness
+        // Actor.SetSpeedMultiplier(0.30f); // NOTE: slowing the player does not make sense since there is nothing to exploit the vulnerableness
     }
     protected override void OnExit()
     {
-        base.OnEnter();
+        base.OnExit();
         // Actor.ResetSpeedMultiplier();
+        Rigidbody2D.velocity = Vector2.zero;
     }
 }
