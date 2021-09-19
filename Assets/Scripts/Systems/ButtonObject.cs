@@ -4,26 +4,33 @@ using UnityEngine;
 
 public class ButtonObject : Interactible
 {
-    public GameObject TriggerTarget;
+    public List<GameObject> TriggerTarget = new List<GameObject>();
 
-    private Interactible _triggerTarget;
+    private List<Interactible> _triggerTarget;
 
     protected override void Awake()
     {
         base.Awake();
-        _triggerTarget = TriggerTarget.GetComponent<Interactible>();
+        if(TriggerTarget.Count > 0)
+        {
+            _triggerTarget = new List<Interactible>();
+            for(int i = 0; i < TriggerTarget.Count; i++)
+                _triggerTarget.Add(TriggerTarget[i].GetComponent<Interactible>());
+        }
     }
 
     public void OnTriggerStay2D(Collider2D col)
     {
-        Debug.Log(col.gameObject.name);
         if(col.gameObject.CompareTag("Box"))
         {
             Interactible TripTarget = col.GetComponent<Interactible>();
             if(!TripTarget.IsActive)
             {
                 TripTarget.transform.position = this.transform.position;
-                _triggerTarget.DoBehaviour();
+                for(int i = 0; i < TriggerTarget.Count; i++)
+                {
+                    _triggerTarget[i].DoBehaviour();
+                }
             }
         }
     }
