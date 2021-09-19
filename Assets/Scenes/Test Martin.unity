@@ -123,6 +123,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &678965436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4732578688745857935, guid: abe93680d87fdb744bee087085c5eccb, type: 3}
+  m_PrefabInstance: {fileID: 494380680029392761}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26acd42d455baa459541fecfda53a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &678965441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4732578688745857928, guid: abe93680d87fdb744bee087085c5eccb, type: 3}
+  m_PrefabInstance: {fileID: 494380680029392761}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &701282034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,6 +190,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7337816761945888516, guid: b47d01c490dde0748bf92e9456980584, type: 3}
+      propertyPath: Actor
+      value: 
+      objectReference: {fileID: 678965436}
     - target: {fileID: 7337816761945888519, guid: b47d01c490dde0748bf92e9456980584, type: 3}
       propertyPath: m_Name
       value: Box
@@ -234,6 +254,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1691526470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691526466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88159219e840a24c8f3a2a6c9fafed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 678965441}
+  smoothSpeed: 0.2
+  offsetPos: {x: 0, y: 0, z: 0}
 --- !u!1001 &494380680029392761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -376,11 +411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2648231716271716063, guid: 5ebf171c8f1c2394fafd6224f80f9e60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2648231716271716063, guid: 5ebf171c8f1c2394fafd6224f80f9e60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -43.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2648231716271716063, guid: 5ebf171c8f1c2394fafd6224f80f9e60, type: 3}
       propertyPath: m_LocalPosition.z
@@ -439,14 +474,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3124569471160606055, guid: 778b65a3edbf1d0458a503c04a10faf4, type: 3}
-      propertyPath: m_SceneBindings.Array.data[0].value
-      value: 
-      objectReference: {fileID: 1691526468}
-    - target: {fileID: 3124569471160606055, guid: 778b65a3edbf1d0458a503c04a10faf4, type: 3}
-      propertyPath: m_SceneBindings.Array.data[1].value
-      value: 
-      objectReference: {fileID: 1691526467}
     - target: {fileID: 4898376843706706496, guid: 778b65a3edbf1d0458a503c04a10faf4, type: 3}
       propertyPath: m_RootOrder
       value: 5

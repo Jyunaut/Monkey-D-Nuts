@@ -39,7 +39,7 @@ public class ButtonObject : Interactible
     {
         if(col != null)
         {
-            if (_levelTransitioner != null && col.gameObject.CompareTag("Box") && !_triggered)
+            if (_levelTransitioner != null && col.gameObject.CompareTag("Box") && !_triggered && IsActive)
             {
                 var asdf = _levelTransitioner.GetComponent<TriggerCutScene>();
                 if (asdf != null)
