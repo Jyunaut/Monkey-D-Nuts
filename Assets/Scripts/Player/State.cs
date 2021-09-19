@@ -101,11 +101,8 @@ namespace Player
                             }
                             else
                             {
-                                if(interactible.CanInteract)
-                                {
-                                    Controller.StartCoroutine(DoInteract(new PickUp(interactible)));
-                                    return;
-                                }
+                                Controller.StartCoroutine(DoInteract(new PickUp(interactible)));
+                                return;
                             }
                         }
                         else if(interactible.gameObject.CompareTag("Switch"))
