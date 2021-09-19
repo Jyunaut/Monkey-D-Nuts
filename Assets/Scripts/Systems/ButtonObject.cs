@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class ButtonObject : Interactible
 {
-    public GameObject TripTarget;
     public GameObject TriggerTarget;
 
-    private Interactible _tripTarget;
     private Interactible _triggerTarget;
 
     protected override void Awake()
     {
         base.Awake();
-        _tripTarget = TripTarget.GetComponent<Interactible>();
         _triggerTarget = TriggerTarget.GetComponent<Interactible>();
     }
 
@@ -22,7 +19,8 @@ public class ButtonObject : Interactible
         Debug.Log(col.gameObject.name);
         if(col.gameObject.CompareTag("Box"))
         {
-            if(!_tripTarget.IsActive)
+            Interactible TripTarget = col.GetComponent<Interactible>();
+            if(!TripTarget.IsActive)
             {
                 TripTarget.transform.position = this.transform.position;
                 _triggerTarget.DoBehaviour();
