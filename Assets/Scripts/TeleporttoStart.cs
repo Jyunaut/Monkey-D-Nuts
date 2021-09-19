@@ -29,6 +29,7 @@ public class TeleporttoStart : MonoBehaviour {
 	    float playerHeight = playerRendererBounds.bounds.size.y;
 	    
 	    if (other.gameObject.CompareTag("Player")) {
+            Vector3 posDiff = new Vector3(0, 0, 0);
 		    if (horizontalOrVertical == "horizontal") {
 			    lastPlayerX = player.transform.position.x;
 			    
@@ -36,14 +37,16 @@ public class TeleporttoStart : MonoBehaviour {
 			    if (player.transform.position.y <=
 				    portalOther.transform.position.y) {
 				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y - portalHeight/2 - playerHeight, player.transform.position.z);
-				    player.transform.position = playerPos;
+                    posDiff = player.transform.position - playerPos;
+                    player.transform.position = playerPos;
 			    }
 			    
 			    // If player hits bottom boundary
 			    else if (player.transform.position.y >=
 				    portalOther.transform.position.y) {
 				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y + portalHeight/2 + playerHeight + 2f, player.transform.position.z); //+2 to adjust for collider offset
-				    player.transform.position = playerPos;
+                    posDiff = player.transform.position - playerPos;
+                    player.transform.position = playerPos;
 			    }
 			    
 			    
@@ -54,24 +57,25 @@ public class TeleporttoStart : MonoBehaviour {
 			    if (player.transform.position.x <=
 				    portalOther.transform.position.x) {
 				    playerPos = new Vector3(portalOther.transform.position.x - portalWidth/2 - playerWidth, lastPlayerY, player.transform.position.z);
-				    player.transform.position = playerPos;
+                    posDiff = player.transform.position - playerPos;
+                    player.transform.position = playerPos;
 				    
 			    }
 			    else if (player.transform.position.x >=
 				    portalOther.transform.position.x) {
 				    playerPos = new Vector3(portalOther.transform.position.x + portalWidth/2 + playerWidth, lastPlayerY, player.transform.position.z);
-				    player.transform.position = playerPos;
+                    posDiff = player.transform.position - playerPos;
+                    player.transform.position = playerPos;
 				    
 			    }
 			    
 		    }
 
-		    
-		    
-		    
-		    
-		    
-
-	    }
+            //held item
+            if (player.GetComponent<Player.Controller>().HeldItem != null)
+            {
+                player.GetComponent<Player.Controller>().HeldItem.transform.position -= posDiff;
+            }
+        }
     }
 }
