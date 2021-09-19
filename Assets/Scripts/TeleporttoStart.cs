@@ -42,7 +42,7 @@ public class TeleporttoStart : MonoBehaviour {
 			    // If player hits bottom boundary
 			    else if (player.transform.position.y >=
 				    portalOther.transform.position.y) {
-				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y + portalHeight/2 + playerHeight, player.transform.position.z);
+				    playerPos = new Vector3(lastPlayerX, portalOther.transform.position.y + portalHeight/2 + playerHeight + 1f, player.transform.position.z); //+1 to adjust for collider offset
 				    player.transform.position = playerPos;
 			    }
 			    
