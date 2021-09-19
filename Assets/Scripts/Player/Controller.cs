@@ -10,7 +10,7 @@ namespace Player
     [RequireComponent(typeof(BoxCollider2D))]
     public class Controller : MonoBehaviour
     {
-        [SerializeField, Range(0f,20f)] private float _speed = 1f;
+        [SerializeField, Range(0f,40f)] private float _speed = 1f;
         [field: SerializeField] public Interactible HeldItem { get; set; }
         
         private float _speedMultiplier = 1f;

@@ -17,6 +17,7 @@ public class Box : Interactible
         base.Awake();
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Rigidbody2D.isKinematic = true;
+        transform.parent = null;
     }
 
     public override void DoBehaviour()
