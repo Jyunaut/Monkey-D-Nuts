@@ -71,7 +71,7 @@ namespace Player
             if (index >= _audioClips.Length)
                 return;
             float scale = 1f;
-            if (index == 0) scale = 0.1f;
+            if (index == 0) scale = 0.5f;
             AudioSource.PlayOneShot(_audioClips[index], scale);
         }
 
