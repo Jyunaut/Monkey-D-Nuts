@@ -16,6 +16,10 @@ public class DoorOpen : Interactible
     {
         base.DoBehaviour();
         _boxCollider2D.enabled = false;
-        Stop();
+    }
+    public override void Stop()
+    {
+        base.Stop();
+        _boxCollider2D.enabled = true;
     }
 }
