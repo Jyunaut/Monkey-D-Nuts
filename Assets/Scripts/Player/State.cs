@@ -73,71 +73,29 @@ namespace Player
         public override void OnEnter()
         {
             base.OnEnter();
-            Interactible interactible = null;
-            IEnumerator DoInteract(State state)
+            if(Controller.HeldItem != null)
             {
-                yield return new WaitForSeconds(0.15f);
-                if (interactible != null)
-                    Controller.SetState(state);
-                else
-                    Controller.SetState(new Idle());
+                Controller.SetState(new Drop());
+                return;
             }
 
             float radius = 1.5f;
             Collider2D[] hit = Physics2D.OverlapCircleAll(Controller.transform.position, radius);
             foreach (Collider2D obj in hit)
             {
-                if (obj.transform.tag == "Box")
+                if (obj.transform.tag == "Box") // NOTE: Create a tag called interactible
                 {
-                    interactible = obj.transform.GetComponent<Interactible>();
+                    Interactible interactible = obj.transform.GetComponent<Interactible>();
+
                     if (interactible.CanInteract)
                     {
-                        if(interactible.gameObject.CompareTag("Box"))
-                        {
-                            if(Controller.HeldItem != null)
-                            {
-                                Controller.StartCoroutine(DoInteract(new Drop(interactible)));
-                                return;
-                            }
-                            else
-                            {
-                                Controller.StartCoroutine(DoInteract(new PickUp(interactible)));
-                                return;
-                            }
-                        }
-                        else if(interactible.gameObject.CompareTag("Switch"))
-                            Controller.StartCoroutine(DoInteract(new Kick(interactible)));
-                        return;
+                        // Controller.StartCoroutine(DoInteract(new PickUp(interactible)));
+                        Controller.SetState(new PickUp(interactible));
                     }
+                    return;
                 }
             }
             Controller.SetState(new Idle());
-        }
-    }
-    
-    class Kick : State
-    {
-        private Interactible _interactible;
-
-        public Kick(Interactible interactible = null)
-        {
-            _interactible = interactible;
-            Controller.HeldItem = _interactible;
-        }
-
-        public override void OnEnter()
-        {
-            base.OnEnter();
-            Controller.StartCoroutine(DoDrop());
-            IEnumerator DoDrop()
-            {
-                Controller.Animator.Play("Kick");
-                _interactible.Interact(Controller);
-                yield return new WaitForSeconds(0.15f);
-                if(_interactible != null)
-                    Controller.SetState(new Idle());
-
-            }
         }
     }
 
@@ -157,8 +115,9 @@ namespace Player
             Controller.StartCoroutine(DoDrop());
             IEnumerator DoDrop()
             {
+                Controller.GetComponent<AudioSource>().Play();
                 Controller.Animator.Play("Pickup");
-                _interactible.Interact(Controller);
+                _interactible.Interact();
                 yield return new WaitForSeconds(0.3f);
                 if(_interactible != null)
                     Controller.SetState(new Idle());
@@ -169,19 +128,12 @@ namespace Player
 
     class Drop : State
     {
-        private Interactible _interactible;
-
-        public Drop(Interactible interactible = null)
-        {
-            _interactible = interactible;
-            Controller.HeldItem = null;
-        }
-
         public override void OnEnter()
         {
             base.OnEnter();
             Controller.StartCoroutine(DoDrop());
-            _interactible.Interact(Controller);
+            Controller.HeldItem.Stop();
+            Controller.HeldItem = null;
             IEnumerator DoDrop()
             {
                 Controller.Animator.Play("Drop");

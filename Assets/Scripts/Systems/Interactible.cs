@@ -6,28 +6,31 @@ using Player;
 
 public abstract class Interactible : MonoBehaviour
 {
-    public Controller Actor;
-    public Action Action;
+    protected Controller player;
+    protected Action action;
     public bool IsActive = false;
     public bool CanInteract = true;
 
-    protected virtual void Awake() { Action = null; }
+    protected virtual void Awake() 
+    { 
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Controller>();
+        action = null; 
+    }
 
-    protected virtual void Update() { if(Action != null) Action(); }
+    protected virtual void Update() { if(action != null) action(); }
 
-    public virtual void Interact(Controller actor)
+    public virtual void Interact()
     {
-        Actor = actor;
         OnEnter();
     }
 
     public virtual void Stop() 
     {
-        Action = null; 
+        action = null; 
         OnExit();
     }
 
     public virtual void DoBehaviour() { IsActive = true; }
-    protected virtual void OnEnter() { Action = DoBehaviour; }
+    protected virtual void OnEnter() { action = DoBehaviour; }
     protected virtual void OnExit() { IsActive = false; }
 }
