@@ -23,22 +23,29 @@ public class Box : Interactible
     public override void DoBehaviour()
     {
         base.DoBehaviour();
-        actorPosition = Actor.GetComponent<Rigidbody2D>().position;
+        actorPosition = player.GetComponent<Rigidbody2D>().position;
         Vector2 curPosition = new Vector2(offset.x + actorPosition.x, offset.y + actorPosition.y);
         Rigidbody2D.MovePosition(curPosition);
     }
 
-    public override void Interact(Controller actor)
+    // public override void Interact()
+    // {
+    //     if(action != null && player.HeldItem != null) 
+    //     { 
+    //         Stop(); // Drop box
+            
+    //     }
+    //     else if(player.HeldItem == null)
+    //     { 
+    //         Debug.Log(1);
+    //         base.Interact(); 
+    //     }
+    // }
+
+    public override void Stop()
     {
-        if(Action != null) 
-        { 
-            Stop(); // Drop box
-            Rigidbody2D.MovePosition(new Vector2(actorPosition.x, actorPosition.y -0.61f));
-        }
-        else 
-        { 
-            base.Interact(actor); 
-        }
+        base.Stop();
+        Rigidbody2D.MovePosition(new Vector2(actorPosition.x, actorPosition.y -0.61f));
     }
 
     protected override void OnEnter()
@@ -49,7 +56,7 @@ public class Box : Interactible
     protected override void OnExit()
     {
         base.OnExit();
-        // Actor.ResetSpeedMultiplier();
+        // Actor.ResetSpeedMultiplier(); // NOTE: slowing the player does not make sense since there is nothing to exploit the vulnerableness
         Rigidbody2D.velocity = Vector2.zero;
     }
 }
